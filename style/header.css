@@ -1,15 +1,14 @@
 .header {
-  padding: 60px 30px 50px 30px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .header__title {
   margin-bottom: 30px;
-  margin-left: -30px;
-  text-align: center;
   font-weight: 900;
   font-size: 60px;
   line-height: 120%;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 .header__text {

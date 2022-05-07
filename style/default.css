@@ -35,11 +35,11 @@ a {
   color: inherit;
 }
 
-ul {
-  /* list-style: none;
+/* ul {
+  list-style: none;
   padding: 0;
-  margin: 0; */
-}
+  margin: 0;
+} */
 
 h1,
 h2,
@@ -74,4 +74,20 @@ iframe {
   max-width: 1200px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.title-h3 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.21px;
+}
+
+.spacing {
+  letter-spacing: 0.08px;
 }

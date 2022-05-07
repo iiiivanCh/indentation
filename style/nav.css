@@ -1,6 +1,6 @@
 .nav {
   padding-top: 26px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   background: #F1F1F1;
   border-radius: 10px;
 }
@@ -20,8 +20,10 @@
   color: #02535F;
 }
 
-.nav__item:not(:last-child) {
-  margin-bottom: 11px;
+.nav__item {
+  text-decoration: 1px solid #000000;
 }
 
-.nav__item-a {}
+.nav__item:not(:last-child) {
+  margin-bottom: 10px;
+}
