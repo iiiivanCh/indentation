@@ -1,10 +1,11 @@
 .s2 {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
 }
 
 .s2__text {
   margin-bottom: 30px;
+  line-height: 120%;
 }
 
 .s2__img1 {
@@ -19,7 +20,7 @@
 
 .s2__img2 {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   margin-left: auto;
   margin-right: auto;
   width: 600px;
@@ -29,7 +30,6 @@
 
 .s2__img3 {
   display: block;
-  /* margin-bottom: 30px; */
   margin-left: auto;
   margin-right: auto;
   width: 1080px;
@@ -44,4 +44,28 @@
 
 .s2__figcaption-img3 {
   padding: 15px 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #5E5E5E;
+}
+
+.s2__img4 {
+  display: block;
+  margin-bottom: 30px;
+  width: 964px;
+  height: 164px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.s2__img5 {
+  display: block;
+  margin-bottom: 30px;
+  width: 1022px;
+  height: 504px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
 }
