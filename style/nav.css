@@ -1,0 +1,27 @@
+.nav {
+  padding-top: 26px;
+  padding-bottom: 20px;
+  background: #F1F1F1;
+  border-radius: 10px;
+}
+
+.nav__title {
+  padding-left: 45px;
+  margin-bottom: 1px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.nav__list {
+  padding-left: 70px;
+  font-size: 20px;
+  line-height: 120%;
+  color: #02535F;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.nav__item-a {}
