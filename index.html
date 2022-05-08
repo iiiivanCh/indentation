@@ -34,19 +34,27 @@
       <nav class="nav">
         <h2 class="nav__title">Содержание:</h2>
         <ol class="nav__list">
-          <li class="nav__item"><a href="" class="nav__item-a">Отступ задается от предыдущего элемента к следующему</a>
+          <li class="nav__item"><a href="#1" class="nav__item-a">
+              <div class="nav__line">Отступ задается от предыдущего элемента к следующему</div>
+            </a>
           </li>
-          <li class="nav__item"><a href="" class="nav__item-a">Отступ задается последнему возможному элементу в
-              DOM-дереве</a></li>
-          <li class="nav__item"><a href="" class="nav__item-a">Для последнего элемента группы отступ обнуляется</a></li>
+          <li class="nav__item"><a href="#2" class="nav__item-a">
+              <div class="nav__line">Отступ задается последнему возможному элементу в
+                DOM-дереве</div>
+            </a></li>
+          <li class="nav__item"><a href="#3" class="nav__item-a">
+              <div class="nav__line">Для последнего элемента группы отступ обнуляется
+              </div>
+            </a></li>
         </ol>
       </nav>
       <section class="s1">
         <div class="wrapper">
-          <h3 class="title-h3">Отступ задается от предыдущего элемента к следующему: <span class="spacing">от первого ко
+          <h3 class="title-h3" id="1">Отступ задается от предыдущего элемента к следующему: <span class="spacing">от
+              первого ко
               второму, сверху вниз, слева направо</span>.</h3>
           <div class="s1__block">
-            <img src="img/s1-img1.png" alt="иллюстрация" width="560" height="415" class="s1__img1">
+            <img src="img/s1-img1.jpg" alt="иллюстрация" width="560" height="415" class="s1__img1">
             <p class="s1__text"><strong>ВАЖНО:</strong> <em>margin</em> всегда задают от предыдущего элемента к
               следующему.
             </p>
@@ -64,7 +72,7 @@
               ссылки.</p>
           </div>
           <div class="s1__block">
-            <img src="img/s1-img2.png" alt="иллюстрация" width="560" height="279" class="s1__img2">
+            <img src="img/s1-img2.jpg" alt="иллюстрация" width="560" height="279" class="s1__img2">
             <p class="s1__text">Отступ внутри блока сверху или слева реализуется через <em>padding-top</em> и
               <em>padding-left</em> родителя.
             </p>
@@ -80,27 +88,27 @@
       </section>
       <section class="s2">
         <div class="wrapper">
-          <h3 class="title-h3">Отступ задается последнему возможному элементу в DOM-дереве</h3>
+          <h3 class="title-h3" id="2">Отступ задается последнему возможному элементу в DOM-дереве</h3>
           <p class="s2__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера,
             посмотрите на этот список:</p>
-          <img src="img/s2-img1.png" alt="иллюстрация" width="1080" height="537" class="s2__img1">
-          <img src="img/s2-img2.png" alt="иллюстрация" width="600" height="450" class="s2__img2">
+          <img src="img/s2-img1.jpg" alt="иллюстрация" width="1080" height="537" class="s2__img1">
+          <img src="img/s2-img2.jpg" alt="иллюстрация" width="600" height="450" class="s2__img2">
           <p class="s2__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
           <figure class="s2__figure">
-            <img src="img/s2-img3.png" alt="иллюстрация" width="1080" height="427" class="s2__img3">
+            <img src="img/s2-img3.jpg" alt="иллюстрация" width="1080" height="427" class="s2__img3">
             <figcaption class="s2__figcaption-img3"><strong>ВАЖНО:</strong> здесь <em>.list-item</em> — последний
               возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
           </figure>
-          <p class="s2__text">Казалось бы, можно задать отступ параграфу <em>&lt;em &gt;</em>, либо обёртке
-            &lt;article &gt; для достижения той же цели. Внешне останется все точно также, но так делать не
+          <p class="s2__text">Казалось бы, можно задать отступ параграфу <em>&lt;p&gt;</em>, либо обёртке
+            &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не
             рекомендуется.</p>
           <p class="s2__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
-          <img src="img/s2-img4.png" alt="иллюстрация" width="964" height="164" class="s2__img4">
+          <img src="img/s2-img4.jpg" alt="иллюстрация" width="964" height="164" class="s2__img4">
           <p class="s2__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет
             section. Именно для него задается
             padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.
           </p>
-          <img src="img/s2-img5.png" alt="иллюстрация" width="1022" height="504" class="s2__img5">
+          <img src="img/s2-img5.jpg" alt="иллюстрация" width="1022" height="504" class="s2__img5">
           <p class="s2__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет
             верстать после вас. Кроме
             того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной
@@ -110,13 +118,53 @@
       </section>
       <section class="s3">
         <div class="wrapper">
-          <h3 class="title-h3 spacing">Для последнего элемента группы отступ всегда обнуляется</h3>
+          <h3 class="title-h3 spacing" id="3">Для последнего элемента группы отступ всегда обнуляется</h3>
           <p class="s3__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
           <p class="s3__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока
             расстояние такое же.</p>
-
+          <img src="img/s3-img1.jpg" alt="иллюстрация" width="600" height="600" class="s3__img1">
+          <p class="s3__text">В соответствии со вторым принципом: последний <em>margin</em> обнуляется, а нижний отступ
+            задаётся через <em>padding</em> для <em>section</em>. Я
+            чаще всего задаю <em>padding</em> для секции с обоих сторон, если расстояние между секциями 100px задаю
+            секциям
+            <em>padding-top:50px</em>
+            и <em>padding-bottom:50px</em>.
+          </p>
+          <img src="img/s3-img2.jpg" alt="иллюстрация" width="600" height="607" class="s3__img2">
+          <img src="img/s3-img3.jpg" alt="иллюстрация" width="1080" height="528" class="s3__img3">
+          <img src="img/s3-img4.jpg" alt="иллюстрация" width="1080" height="530" class="s3__img4">
+          <p class="s3__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:
+          </p>
+          <img src="img/s3-img5.jpg" alt="иллюстрация" width="1080" height="88" class="s3__img5">
+          <img src="img/s3-img6.jpg" alt="иллюстрация" width="806" height="475" class="s3__img6">
+          <p class="s3__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между
+            пунктами меню задаются так:</p>
+          <img src="img/s3-img7.jpg" alt="иллюстрация" width="317" height="110" class="s3__img7">
+          <p class="s3__text">Советую использовать псевдоклассы :last-child чаще других, например так:
+          </p>
+          <img src="img/s3-img8.jpg" alt="иллюстрация" width="500" height="383" class="s3__img8">
         </div>
       </section>
+      <footer class="footer">
+        <div class="wrapper">
+          <h2 class="footer__title">Подытожим:</h2>
+          <ul class="footer__list">
+            <li class="footer__item">отступы задаём от предыдущего элемента к следующему
+            </li>
+            <li class="footer__item">используем только margin-right и margin-bottom
+            </li>
+            <li class="footer__item">внешние отступы задаются только между соседями
+            </li>
+            <li class="footer__item">внутренний отступ задаём самому верхнему элементу в дом дереве
+            </li>
+            <li class="footer__item">последнему элементу группы отступ всегда обнуляем</li>
+          </ul>
+          <p class="footer__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда
+            базовые
+            принципы приходится нарушать в угоду
+            дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
+        </div>
+      </footer>
     </div>
   </article>
 </body>

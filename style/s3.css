@@ -1,9 +1,88 @@
 .s3 {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .s3__text {
   margin-bottom: 30px;
   line-height: 120%;
+}
+
+.s3__img1 {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.s3__img2 {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 607px;
+  object-fit: cover;
+}
+
+.s3__img3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1080px;
+  height: 528px;
+  object-fit: cover;
+}
+
+.s3__img4 {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1080px;
+  height: 530px;
+  object-fit: cover;
+}
+
+.s3__img5 {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1080px;
+  height: 88px;
+  object-fit: cover;
+}
+
+.s3__img6 {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 806px;
+  height: 475px;
+  object-fit: cover;
+}
+
+.s3__img7 {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 317px;
+  height: 110px;
+  object-fit: cover;
+}
+
+.s3__img8 {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 383px;
+  object-fit: cover;
 }

@@ -20,8 +20,10 @@
   color: #02535F;
 }
 
-.nav__item {
-  text-decoration: 1px solid #000000;
+.nav__line {
+  display: inline-block;
+  height: 22px;
+  border-bottom: 1px solid #000000;
 }
 
 .nav__item:not(:last-child) {
